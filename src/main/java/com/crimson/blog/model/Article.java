@@ -26,8 +26,7 @@ public class Article {
     @Column(nullable = false, columnDefinition = "TEXT")
     private String content;
 
-    // Keep the physical name aligned with Spring's conventional mapping. This
-    // also matches the existing articles table created by earlier releases.
+    
     @Column(name = "date_published", nullable = false)
     private LocalDate publicationDate;
 
